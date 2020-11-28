@@ -1,4 +1,4 @@
-baseURL = "http://example.org/"
+baseURL = "https://hugo-task-management.netlify.app/"
 languageCode = "en-us"
 title = "Using Hugo as a task management platform"
 theme = "dashboard"
