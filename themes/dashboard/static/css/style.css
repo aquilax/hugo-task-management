@@ -42,3 +42,18 @@ header h1 {
   padding: .4em;
   border-radius: .4em;
 }
+
+dl.params {
+  display: flex;
+  flex-flow: row wrap;
+}
+.params dt {
+  flex-basis: 20%;
+  text-align: right;
+  font-weight: bold;
+}
+dd {
+  flex-basis: 70%;
+  flex-grow: 1;
+  margin: 0 0 0 1em;
+}

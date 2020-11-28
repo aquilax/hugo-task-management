@@ -1,6 +1,6 @@
 {{ define "main" }}
     <h1>{{ .Params.id }} / {{ .Title }}</h1>
-    <dl>
+    <dl class="params">
     {{ range $paramName := .Site.Params.paramsInTaskDetail }}
         {{ $value := $.Param $paramName }}
         {{ if $value }}
