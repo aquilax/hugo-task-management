@@ -1,0 +1,8 @@
+{{ define "main" }}
+Tasks
+<ul>
+    {{ range .Site.RegularPages }}
+    <li>{{ .Params.id }} - {{ .Params.title }} [{{ .Params.status }}]</li>
+    {{ end }}
+</ul>
+{{ end }}
