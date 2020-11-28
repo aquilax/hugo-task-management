@@ -2,11 +2,11 @@
 {{ $tasks := .Site.RegularPages }}
 <main class="dashboard">
 {{ range $column := .Site.Params.dashboardColumns }}
-    <section>
+    <section class="{{ $column | urlize}}">
         <h2>{{ $column }}</h2>
         <ul>
             {{ range $task := (where $tasks ".Params.status" $column) }}
-            <li>
+            <li class="task {{ $task.Params.id | urlize}}">
                 <h3><a href="{{ $task.Permalink }}">{{ $task.Params.id }}</a></h3>
                 {{ $task.Params.title }}
             </li>

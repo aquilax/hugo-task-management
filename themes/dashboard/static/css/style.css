@@ -1,7 +1,24 @@
+body  {
+  font-family:Verdana, Geneva, sans-serif;
+  font-size:10pt;
+}
+h1, h2, h3, h4, h5 {
+  margin: 0;
+  padding:0
+}
+header h1 {
+  font-size:12pt;
+  margin: .4em 0
+}
 .dashboard {
   display: flex;
   flex-direction: row;
   align-items: center;
+}
+.dashboard h2 {
+  font-size:12pt;
+  text-align: center;
+  padding:.4em 0;
 }
 .dashboard section {
   flex: 1;
@@ -18,4 +35,10 @@
 .dashboard section li {
   list-style: none;
   padding: .2em;
+}
+.dashboard .task {
+  border:2px solid #000;
+  margin: .2em;
+  padding: .4em;
+  border-radius: .4em;
 }
