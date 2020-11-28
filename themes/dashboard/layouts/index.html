@@ -1,8 +1,18 @@
 {{ define "main" }}
 Tasks
-<ul>
-    {{ range .Site.RegularPages }}
-    <li>{{ .Params.id }} - {{ .Params.title }} [{{ .Params.status }}]</li>
-    {{ end }}
-</ul>
+{{ $tasks := .Site.RegularPages }}
+{{ range $column := .Site.Params.dashboardColumns }}
+    <section>
+        <h2>{{ $column }}</h2>
+        <ul>
+            {{ range $task := (where $tasks ".Params.status" $column) }}
+            <li>
+                <h3><a href="{{ $task.Permalink }}">{{ $task.Params.id }}</a></h3>
+                {{ $task.Params.title }}
+            </li>
+            {{ end }}
+        </ul>
+    </section>
+{{ end }}
+
 {{ end }}

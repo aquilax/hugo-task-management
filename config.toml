@@ -2,3 +2,6 @@ baseURL = "http://example.org/"
 languageCode = "en-us"
 title = "Using Hugo as a task management platform"
 theme = "dashboard"
+
+[params]
+  dashboardColumns = ["TODO", "Blocked", "In progress", "In Review", "Done"]
