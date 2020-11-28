@@ -1,6 +1,7 @@
 {{ define "main" }}
 Tasks
 {{ $tasks := .Site.RegularPages }}
+<main class="dashboard">
 {{ range $column := .Site.Params.dashboardColumns }}
     <section>
         <h2>{{ $column }}</h2>
@@ -14,5 +15,5 @@ Tasks
         </ul>
     </section>
 {{ end }}
-
+</main>
 {{ end }}

@@ -1,0 +1,21 @@
+.dashboard {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.dashboard section {
+  flex: 1;
+  border: 1px solid #000;
+  align-self: stretch;
+}
+.dashboard section h2 {
+  border-bottom: 1px solid #000;
+}
+.dashboard section ul {
+  padding: 0;
+  margin: 0;
+}
+.dashboard section li {
+  list-style: none;
+  padding: .2em;
+}
