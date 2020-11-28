@@ -4,4 +4,7 @@ title = "Hugo task management platform"
 theme = "dashboard"
 
 [params]
-  dashboardColumns = ["TODO", "Blocked", "In progress", "In Review", "Done"]
+  dashboardColumns = ["TODO", "Blocked", "Progress", "Review", "Done"]
+  defaultStatus = "TODO"
+  defaultTeam = ""
+  defaultProject = "Hugo Task Management"

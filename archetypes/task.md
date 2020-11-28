@@ -1,11 +1,11 @@
 ---
 id: {{ .Name | title}}
 title:
-status: TODO
+status: {{ .Site.Params.defaultStatus }}
 date: {{ .Date }}
 lastmod: {{ .Date }}
-project: Hugo Task Management
-team:
+project: {{ .Site.Params.defaultProject }}
+team: {{ .Site.Params.defaultTeam }}
 assignedTo:
 tags:
 completedAt:
