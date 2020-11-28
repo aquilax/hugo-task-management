@@ -1,7 +1,8 @@
 # Hugo task management
 
-This is an experiment to run task management system using the [Hugo](https://gohugo.io/) static site tool.
+[![Netlify Status](https://api.netlify.com/api/v1/badges/0b3440bc-a273-493c-b081-b602f7bf741c/deploy-status)](https://app.netlify.com/sites/hugo-task-management/deploys)
 
+This is an experiment to run task management system using the [Hugo](https://gohugo.io/) static site tool.
 
 You can find a demo dashboard here: https://hugo-task-management.netlify.app/
 
