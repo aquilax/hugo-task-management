@@ -1,14 +1,13 @@
 {{ define "main" }}
     <h1>{{ .Params.id }} / {{ .Title }}</h1>
     <dl>
-        <dt>Status</dt>
-            <dd>{{ .Params.status }}</dd>
-        <dt>Created</dt>
-            <dd>{{ .Date }}</dd>
-        <dt>Created</dt>
-            <dd>{{ .Params.project }}</dd>
-        <dt>Team</dt>
-            <dd>{{ .Params.team }}</dd>
+    {{ range $paramName := .Site.Params.paramsInTaskDetail }}
+        {{ $value := $.Param $paramName }}
+        {{ if $value }}
+            <dt>{{ title $paramName }}</dt>
+                <dd>{{ $value }}</dd>
+        {{ end }}
+    {{ end }}
     </dl>
     <hr/>
     <main>

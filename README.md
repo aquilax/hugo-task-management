@@ -12,15 +12,24 @@ You can find a demo dashboard here: https://hugo-task-management.netlify.app/
 
 ```toml
 [params]
-  dashboardColumns = ["TODO", "Blocked", "In progress", "In Review", "Done"]
+  dashboardColumns = ["TODO", "Blocked", "Progress", "Review", "Done"]
+  defaultStatus = "TODO"
+  defaultTeam = "A Team"
+  defaultProject = "Hugo Task Management"
+  paramsInTaskDetail = ["status", "date", "project", "team", "assignedTo", "tags", "completedAt"]
 ```
 
 * `dashboardColumns` is a list of the columns that will be available on the home page dashboard
+* `paramsInTaskDetail` list of task parameters to be shown in task detail view
+* `defaultStatus` default status to use when creating a new task
+* `defaultTeam` default team name to set when creating a new task
+* `defaultProject` default project to add the task to
 
+## Usage
 
-## TODO
-* adding new task
-* changing task status
-* comment on task
-* tasks assigned to user
-* projects page
+### Creating a new task
+
+```
+hugo new task/PREFIX-0000001.md"
+```
+where `PREFIX-0000001` is the the identifier of the task

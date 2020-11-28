@@ -8,3 +8,4 @@ theme = "dashboard"
   defaultStatus = "TODO"
   defaultTeam = ""
   defaultProject = "Hugo Task Management"
+  paramsInTaskDetail = ["status", "date", "project", "team", "assignedTo", "tags", "completedAt"]
