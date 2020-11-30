@@ -5,7 +5,11 @@
         {{ $value := $.Param $paramName }}
         {{ if $value }}
             <dt>{{ title $paramName }}</dt>
+            {{ if reflect.IsSlice $value }}
+                <dd>{{ delimit $value ", " }}</dd>
+            {{ else }}
                 <dd>{{ $value }}</dd>
+            {{ end }}
         {{ end }}
     {{ end }}
     </dl>
