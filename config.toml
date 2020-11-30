@@ -3,9 +3,17 @@ languageCode = "en-us"
 title = "Hugo task management platform"
 theme = "dashboard"
 
+[taxonomies]
+  project = "projects"
+  tag = "tags"
+  user = "users"
+  team = "teams"
+
 [params]
   dashboardColumns = ["TODO", "Blocked", "Progress", "Review", "Done"]
+  paramsInTaskDetail = ["status", "date", "projects", "teams", "users", "tags", "completedAt"]
   defaultStatus = "TODO"
-  defaultTeam = ""
-  defaultProject = "Hugo Task Management"
-  paramsInTaskDetail = ["status", "date", "project", "team", "assignedTo", "tags", "completedAt"]
+  defaultTeams = []
+  defaultUsers = ["aquilax"]
+  defaultProjects = ["Hugo Task Management"]
+  defaultTags = []

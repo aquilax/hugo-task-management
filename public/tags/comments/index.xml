@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>comments on Hugo task management platform</title>
+    <link>https://hugo-task-management.netlify.app/tags/comments/</link>
+    <description>Recent content in comments on Hugo task management platform</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 28 Nov 2020 11:17:35 +0100</lastBuildDate>
+    
+	<atom:link href="https://hugo-task-management.netlify.app/tags/comments/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Decide on the best way to add comments to a task</title>
+      <link>https://hugo-task-management.netlify.app/task/task-00005/</link>
+      <pubDate>Sat, 28 Nov 2020 11:17:35 +0100</pubDate>
+      
+      <guid>https://hugo-task-management.netlify.app/task/task-00005/</guid>
+      <description>Decide on the best way to add comments to a task. Maybe use https://gohugo.io/templates/shortcode-templates/ or just markup.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -4,9 +4,9 @@ title:
 status: {{ .Site.Params.defaultStatus }}
 date: {{ .Date }}
 lastmod: {{ .Date }}
-project: {{ .Site.Params.defaultProject }}
-team: {{ .Site.Params.defaultTeam }}
-assignedTo:
-tags:
+projects: {{ .Site.Params.defaultProjects }}
+teams: {{ .Site.Params.defaultTeams }}
+users: {{ .Site.Params.defaultUsers }}
+tags: {{ .Site.Params.defaultTags }}
 completedAt:
 ---

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Projects on Hugo task management platform</title>
+    <link>https://hugo-task-management.netlify.app/projects/</link>
+    <description>Recent content in Projects on Hugo task management platform</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 28 Nov 2020 13:40:32 +0100</lastBuildDate>
+    
+	<atom:link href="https://hugo-task-management.netlify.app/projects/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Hugo Task Management</title>
+      <link>https://hugo-task-management.netlify.app/projects/hugo-task-management/</link>
+      <pubDate>Sat, 28 Nov 2020 13:40:32 +0100</pubDate>
+      
+      <guid>https://hugo-task-management.netlify.app/projects/hugo-task-management/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
