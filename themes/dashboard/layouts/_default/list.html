@@ -1,0 +1,12 @@
+{{ define "main" }}
+<main class="tasks">
+    {{ range $task := .Site.RegularPages }}
+    <ul>
+        <li class="task {{ $task.Params.id | urlize}}">
+            <h3><a href="{{ $task.Permalink }}">{{ $task.Params.id }}</a> [{{ $task.Params.status }}]</h3>
+            {{ $task.Params.title }}
+        </li>
+    </ul>
+    {{ end }}
+</main>
+{{ end }}
