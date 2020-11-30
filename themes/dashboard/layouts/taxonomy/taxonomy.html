@@ -1,5 +1,5 @@
 {{ define "main" }}
-<h1>{{ .Title }}</h1>
+<h1><a href="{{.Site.BaseURL}}/{{ .Section | urlize }}">{{ title .Section }}</a> / {{ .Title }}</h1>
 {{ range $task := .Pages }}
 <ul>
     <li class="task {{ $task.Params.id | urlize}}">

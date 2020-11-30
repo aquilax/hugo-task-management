@@ -15,11 +15,4 @@
     </section>
 {{ end }}
 </main>
-<menu>
-    <ul>
-    {{ range $taxonomyname, $taxonomy := .Site.Taxonomies }}
-        <li><a href="{{ "/" | relLangURL}}{{ $taxonomyname | urlize }}">{{ title $taxonomyname }}</a></li>
-    {{ end }}
-    </ul>
-</menu>
 {{ end }}
